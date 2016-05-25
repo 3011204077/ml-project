@@ -1,0 +1,42 @@
+numinjured < 1.0
+  oppnuminjured < 1.0
+    numinjured < 0.0
+      oppnuminjured < 0.0 : 1
+      oppnuminjured >= 0.0 : 0
+    numinjured >= 0.0
+      winpercent < 0.532362542753
+        oppwinningpercent < 0.404436407752
+          winpercent < 0.515102577345 : 1
+          winpercent >= 0.515102577345 : 0
+        oppwinningpercent >= 0.404436407752 : 1
+      winpercent >= 0.532362542753 : 1
+  oppnuminjured >= 1.0
+    opprundifferential < 24.0
+      rundifferential < 29.0
+        opprundifferential < 18.0
+          opprundifferential < 13.0 : 1
+          opprundifferential >= 13.0 : 0
+        opprundifferential >= 18.0 : 0
+      rundifferential >= 29.0
+        rundifferential < 67.0
+          opprundifferential < 16.0 : 1
+          opprundifferential >= 16.0 : 0
+        rundifferential >= 67.0 : 1
+    opprundifferential >= 24.0
+      rundifferential < 80.0
+        rundifferential < 14.0
+          rundifferential < -7.0 : 1
+          rundifferential >= -7.0 : 0
+        rundifferential >= 14.0
+          oppwinningpercent < -0.0332404883003 : 1
+          oppwinningpercent >= -0.0332404883003 : 0
+      rundifferential >= 80.0 : 0
+numinjured >= 1.0
+  oppnuminjured < 2.07108370659
+    oppnuminjured < 2.0 : 1
+    oppnuminjured >= 2.0
+      numinjured < 2.0 : 0
+      numinjured >= 2.0 : 1
+  oppnuminjured >= 2.07108370659
+    numinjured < 3.0 : 0
+    numinjured >= 3.0 : 1
